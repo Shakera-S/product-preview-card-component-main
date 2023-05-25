@@ -11,19 +11,78 @@
 - White: hsl(0, 0%, 100%)
 */
 
-body {
-    background-color: hsl(30, 38%, 92%);
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body p {
-    font-size: 14px;
+/*Getting rid of the bullet points on the listed items*/
+ul {
+  list-style-type: none;
+}
+
+/*So that the img and words are pushed up on each other*/
+img {
+  max-width: 100%;
+}
+
+button,
+li {
+  font-family: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  min-height: calc(100vh - 0.1px);
+  margin: 0 1.5rem;
+}
+
+.container {
+  max-width: 500px;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+}
+
+h1,
+.sale {
+  font-family: "Fraunces", sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8;
+}
+
+.sale {
+  color: hsl(158, 36%, 37%);
+}
+
+.ad {
+  background-color: hsl(0, 0%, 100%);
 }
 
 .attribution {
-    font-size: 14px;
-    text-align: center;
+  font-size: 14px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
